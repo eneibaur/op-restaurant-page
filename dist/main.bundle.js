@@ -14,7 +14,7 @@
   \**********************/
 /***/ (() => {
 
-eval("function test() {\n    const element = document.createElement('div');\n      element.innerText = \"hi!\";\n      return element;\n  }\n  \n  document.body.appendChild(test());\n\n//# sourceURL=webpack://op-restaurant-page/./src/index.js?");
+eval("function test() {\n    const element = document.createElement('div');\n      element.innerText = \"Woo!\";\n      return element;\n  }\n  \n  document.body.appendChild(test());\n\n//# sourceURL=webpack://op-restaurant-page/./src/index.js?");
 
 /***/ })
 
