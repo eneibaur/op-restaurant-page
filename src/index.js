@@ -11,6 +11,7 @@ const homePage = (() => {
         div.innerText = `${text}`
         return div;
     };
-      content.append(createDiv(hello));
+      content.append(createDiv('Hello world!'));
+      content.append(createDiv('And another!'));
 }
 )();

@@ -14,7 +14,7 @@
   \**********************/
 /***/ (() => {
 
-eval("function test() {\n    const element = document.createElement('div');\n      element.innerText = \"Woo!\";\n      return element;\n  }\n  \n  document.body.appendChild(test());\n\n//# sourceURL=webpack://op-restaurant-page/./src/index.js?");
+eval("const homePage = (() => {\n    let content = document.querySelector(\"#content\");\n\n    function stuff() {\n        const element = document.createElement('div');\n        element.classList.add(\"content\");\n        return element;\n      };\n    function createDiv(text) {\n        const div = document.createElement('div');\n        div.innerText = `${text}`\n        return div;\n    };\n      content.appendChild(createDiv('hello'));\n}\n)();\n\n//# sourceURL=webpack://op-restaurant-page/./src/index.js?");
 
 /***/ })
 
