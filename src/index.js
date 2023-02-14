@@ -1,6 +1,6 @@
 function test() {
     const element = document.createElement('div');
-      element.innerText = "test";
+      element.innerText = "Woo!";
       return element;
   }
   
