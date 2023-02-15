@@ -1,3 +1,5 @@
+import './style.css';
+
 const homePage = (() => {
     let content = document.querySelector("#content");
 
@@ -9,6 +11,7 @@ const homePage = (() => {
     function createDiv(text) {
         const div = document.createElement('div');
         div.innerText = `${text}`
+        div.classList.add('hello');
         return div;
     };
       content.append(createDiv('Hello world!'));
