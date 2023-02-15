@@ -1,6 +1,7 @@
 import './style.css';
 
 const homePage = (() => {
+
     let content = document.querySelector("#content");
 
     function createHeader() {
@@ -41,25 +42,25 @@ const homePage = (() => {
 
     }
 
-  //   function stuff() {
-  //       const element = document.createElement('div');
-  //       element.classList.add("content");
-  //       return element;
-  //     };
+    // function createBody() {
+    //   // calls other modules to load in pertinent information
+    // }
 
-  //   function createDiv(text) {
-  //       const div = document.createElement('div');
-  //       div.innerText = `${text}`
-  //       div.classList.add('hello');
-  //       return div;
-  //   };
+    function createFooter() {
+      const footer = document.createElement(`footer`);
+      footer.classList.add(`footer`);
 
-  //   function header(text) {
-  //     const div = document.createElement('div');
-  //     div.classList.add('header');
-  //     return div;
-  // };
+      const footerText = document.createElement(`p`);
+      const currentDate = new Date().getFullYear()
+      footerText.textContent = `Copyright ${currentDate} Erik Neibaur`;
+
+      footer.appendChild(footerText);
+
+      return footer;
+    }
 
       content.append(createHeader());
+      // content.append(createBody());
+      document.body.append(createFooter());
 }
 )();
