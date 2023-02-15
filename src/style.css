@@ -1,3 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(31, 28, 28);
+}
+
+div {
+    border: 1px solid red;
+}
+
 .hello {
     color:red;
+}
+
+.header {
+    border: 1px solid blue;
+    padding: 30px;
+}
+
+.nav-div {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.nav-menu-button {
+    color: green;
 }
