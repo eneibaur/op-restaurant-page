@@ -22,15 +22,15 @@ const homePage = (() => {
       const navDiv = document.createElement(`div`);
       navDiv.classList.add(`nav-div`);
 
-      const home = document.createElement(`p`);
+      const home = document.createElement(`button`);
       home.classList.add(`nav-menu-button`);
       home.innerText = "Home"
 
-      const menu = document.createElement(`p`);
+      const menu = document.createElement(`button`);
       menu.classList.add(`nav-menu-button`);
       menu.innerText = "Menu"
 
-      const about = document.createElement(`p`);
+      const about = document.createElement(`button`);
       about.classList.add(`nav-menu-button`);
       about.innerText = "About"
 
