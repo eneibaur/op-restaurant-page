@@ -68,7 +68,7 @@ const homePage = (() => {
       return footer;
     }
 
-      content.append(createHeader());
+      document.body.insertBefore(createHeader(), content);
       // content.append(createBody());
       document.body.append(createFooter());
 }
