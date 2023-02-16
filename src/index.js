@@ -51,10 +51,18 @@ const homePage = (() => {
       footer.classList.add(`footer`);
 
       const footerText = document.createElement(`p`);
+      const imgCopyright = document.createElement('p');
+      const copyrightLink = document.createElement('a')
+
       const currentDate = new Date().getFullYear()
       footerText.textContent = `Copyright ${currentDate} Erik Neibaur`;
+      
+      copyrightLink.setAttribute = (`href`, `https://www.pexels.com/photo/shallow-focus-photography-of-several-pizzas-1566837/`);
+      copyrightLink.innerText = `Narda Yescas from Pexels`;
+      imgCopyright.textContent = `image courtesty of ${copyrightLink}`;
 
       footer.appendChild(footerText);
+      footer.appendChild(imgCopyright);
 
       return footer;
     }
