@@ -1,6 +1,9 @@
 import './style.css';
+import homePage from './home';
+import menuPage from './menu';
+import aboutPage from './about';
 
-const homePage = (() => {
+const indexPage = (() => {
 
     let content = document.querySelector("#content");
 
@@ -42,9 +45,12 @@ const homePage = (() => {
 
     }
 
-    // function createBody() {
-    //   // calls other modules to load in pertinent information
-    // }
+    function createBody() {
+      // calls other modules to load in pertinent information
+      let content = aboutPage();
+
+      return content;
+    }
 
     function createFooter() {
       const footer = document.createElement(`footer`);
@@ -69,7 +75,7 @@ const homePage = (() => {
     }
 
       document.body.insertBefore(createHeader(), content);
-      // content.append(createBody());
-      document.body.append(createFooter());
+      content.append(createBody());
+      document.body.appendChild(createFooter());
 }
 )();
