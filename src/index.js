@@ -5,7 +5,7 @@ const homePage = (() => {
     let content = document.querySelector("#content");
 
     function createHeader() {
-      const header = document.createElement('header');
+      const header = document.createElement('div');
       header.classList.add('header');
 
       const dinerName = document.createElement('h1');
