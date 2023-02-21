@@ -28,14 +28,23 @@ const indexPage = (() => {
       const home = document.createElement(`button`);
       home.classList.add(`nav-menu-button`);
       home.innerText = "Home"
+      home.addEventListener('click', () => {
+        alert('home!')
+      });
 
       const menu = document.createElement(`button`);
       menu.classList.add(`nav-menu-button`);
       menu.innerText = "Menu"
+      menu.addEventListener('click', () => {
+        alert('menu!')
+      });
 
       const about = document.createElement(`button`);
       about.classList.add(`nav-menu-button`);
       about.innerText = "About"
+      about.addEventListener('click', () => {
+        alert('about!')
+      });
 
       navDiv.appendChild(home);
       navDiv.appendChild(menu);
