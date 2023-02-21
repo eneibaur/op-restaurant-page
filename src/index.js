@@ -1,7 +1,7 @@
 import './style.css';
-import homePage from './home';
-import menuPage from './menu';
-import aboutPage from './about';
+import homePage from './home.js';
+import menuPage from './menu.js';
+import aboutPage from './about.js';
 
 const indexPage = (() => {
 
@@ -29,21 +29,24 @@ const indexPage = (() => {
       home.classList.add(`nav-menu-button`);
       home.innerText = "Home"
       home.addEventListener('click', () => {
-        alert('home!')
+        clearDoc();
+        content.append(homePage());
       });
 
       const menu = document.createElement(`button`);
       menu.classList.add(`nav-menu-button`);
       menu.innerText = "Menu"
       menu.addEventListener('click', () => {
-        alert('menu!')
+        clearDoc();
+        content.append(menuPage());
       });
 
       const about = document.createElement(`button`);
       about.classList.add(`nav-menu-button`);
       about.innerText = "About"
       about.addEventListener('click', () => {
-        alert('about!')
+        clearDoc();
+        content.append(aboutPage());
       });
 
       navDiv.appendChild(home);
@@ -81,6 +84,10 @@ const indexPage = (() => {
       footer.appendChild(imgCopyright);
 
       return footer;
+    }
+
+    function clearDoc() {
+      content.replaceChildren();
     }
 
       document.body.insertBefore(createHeader(), content);

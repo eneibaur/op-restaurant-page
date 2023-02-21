@@ -1,10 +1,10 @@
-const menuPage =(() => {
+function menuPage(){
 
-    function menuPlaceholder() {
-        const placeholder = document.createElement(`div`);
-        placeholder.innerText = "I'm the menu page placeholder!"
+    const placeholder = document.createElement(`div`);
+    placeholder.innerText = "I'm the menu page placeholder!"
+
+    return placeholder 
     
-        return placeholder
-    }
+};
 
-})();
+export default menuPage;
