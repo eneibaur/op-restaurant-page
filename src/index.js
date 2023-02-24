@@ -13,7 +13,7 @@ const indexPage = (() => {
 
       const dinerName = document.createElement('h1');
       dinerName.classList.add('diner-name')
-      dinerName.innerText = `Toshi's Pizza`;
+      dinerName.innerText = `Jacky's Pizza`;
 
       header.appendChild(dinerName);
       header.appendChild(navBar());
