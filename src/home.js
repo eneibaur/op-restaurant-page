@@ -1,9 +1,21 @@
+import Photo from './img/pexels-andrea-piacquadio-3769999.jpg';
+
 function homePage(){
 
-    const placeholder = document.createElement(`div`);
-    placeholder.innerText = "I'm the home page placeholder!"
+    const pageContents = document.createElement(`div`);
+    pageContents.classList.add('tab-menus');
 
-    return placeholder 
+    const paraOne = document.createElement(`h1`);
+    paraOne.textContent = "Hello! I'm Jackie!"
+
+    const ownerPhoto = new Image();
+    ownerPhoto.src = Photo;
+    ownerPhoto.classList.add('profile-photo');
+
+    pageContents.appendChild(paraOne);
+    pageContents.appendChild(ownerPhoto);
+
+    return pageContents;
     
 };
 
