@@ -59,7 +59,7 @@ const indexPage = (() => {
 
     function createBody() {
       // calls other modules to load in pertinent information
-      let content = aboutPage();
+      let content = homePage();
 
       return content;
     }
