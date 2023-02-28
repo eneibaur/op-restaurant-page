@@ -12,8 +12,12 @@ function homePage(){
     ownerPhoto.src = Photo;
     ownerPhoto.classList.add('profile-photo');
 
+    const paraTwo = document.createElement('h2');
+    paraTwo.textContent = "I've been making pizzas for my family since I was a little girl - and for Seattle since I was a teenager!"
+
     pageContents.appendChild(paraOne);
     pageContents.appendChild(ownerPhoto);
+    pageContents.appendChild(paraTwo);
 
     return pageContents;
     
