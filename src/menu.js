@@ -1,9 +1,15 @@
 function menuPage(){
 
-    const placeholder = document.createElement(`div`);
-    placeholder.innerText = "I'm the menu page placeholder!"
+    const pageContents = document.createElement(`div`);
+    pageContents.classList.add('tab-menus');
+    pageContents.id = 'menu'
 
-    return placeholder 
+    const paraOne = document.createElement(`h1`);
+    paraOne.textContent = "Come visit us!"
+    
+    pageContents.appendChild(paraOne);
+
+    return pageContents;
     
 };
 
