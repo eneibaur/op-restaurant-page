@@ -15,22 +15,28 @@ body {
     background-position: center;
 }
 
+h3 {
+    margin-top: -.5rem;
+}
+
 .header {
+    margin: 0 0 0 0;
     padding: 30px 30px 5px 30px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-items: center;
     align-items: center;
     background-color: var(--background-color);
 }
 
 #content {
     display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
+    margin: auto 50%;
     height: 65vh;
+    width: 100vh;
+    overflow: scroll;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-div {
@@ -60,9 +66,10 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
+    align-self: center;
+    justify-self: center;
     align-items: center;
     text-align: center;
-    margin: 0% 25% 0 25%;
     min-width: 400px;
 }
 
