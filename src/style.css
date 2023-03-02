@@ -102,6 +102,10 @@ button:hover {
     border-radius: 5rem;
 }
 
+.slice-graphic {
+    width: 50px;
+}
+
 .map{
     max-width: fit-content;
 }

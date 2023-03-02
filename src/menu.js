@@ -1,17 +1,36 @@
-function menuPage(){
+import Photo from './img/pexels-andrea-piacquadio-3769999.jpg';
 
+function menuPage(){
     const pageContents = document.createElement(`div`);
     pageContents.classList.add('tab-menus');
-    pageContents.id = 'menu'
+    pageContents.id = 'menu';
 
-    const paraOne = document.createElement(`h1`);
-    paraOne.textContent = "Come visit us!"
+    function menuItem(imglink, itemname) {
+        const slice = document.createElement('div');
+        slice.classList.add('pizza-grid');
+        
+        const slicePhoto = new Image();
+        slicePhoto.src = imglink;
+        slicePhoto.classList.add('slice-graphic');
 
-    const paraTwo = document.createElement(`h1`);
-    paraTwo.textContent = "Come visit us!"
+        const sliceName = document.createElement('p')
+        sliceName.textContent = itemname;
 
-    pageContents.appendChild(paraOne);
-    pageContents.appendChild(paraTwo);
+        slice.appendChild(sliceName);
+        slice.appendChild(slicePhoto);
+
+        return slice;
+    }
+
+    const pepperoni = menuItem(Photo, 'Pepperoni');
+    const cheese = menuItem(Photo, 'Cheese');
+    const meat = menuItem(Photo, "Meat Lover's");
+    const supreme = menuItem(Photo, "Supreme");
+
+    pageContents.appendChild(pepperoni);
+    pageContents.appendChild(cheese);
+    pageContents.appendChild(meat);
+    pageContents.appendChild(supreme);
 
     return pageContents;
     
