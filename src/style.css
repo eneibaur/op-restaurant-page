@@ -36,6 +36,13 @@ button:hover {
 
 }
 
+#menu {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 400px));
+    grid-auto-rows: 50px;
+    gap: 50px;
+}
+
 .header {
     margin: 0 0 0 0;
     padding: 30px 30px 5px 30px;
@@ -47,8 +54,7 @@ button:hover {
 }
 
 #content {
-    display: flex;
-    margin: auto 50%;
+    display: grid;
     height: 65vh;
     width: 100vh;
     overflow: hidden;
