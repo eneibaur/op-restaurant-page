@@ -19,6 +19,23 @@ h3 {
     margin-top: -.5rem;
 }
 
+button {
+    color: white;
+    background-color: rgba(31, 28, 28, 0);
+    border: none;
+    height: auto;
+    position: relative;
+    transition-duration: .1s;
+}
+
+button:hover {
+    transition-duration: .1s;
+    color: orange;
+    text-decoration: underline;
+    transform: translateY(-5px);
+
+}
+
 .header {
     margin: 0 0 0 0;
     padding: 30px 30px 5px 30px;
